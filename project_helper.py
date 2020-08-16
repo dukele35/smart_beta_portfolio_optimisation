@@ -130,7 +130,7 @@ def plot_weights(weights, title):
         yaxis={'title': 'Tickers'})
 
     fig = go.Figure(data=[trace], layout=layout)
-    offline_py.plot(fig, config=config, filename=graph_path, auto_open=True)
+    offline_py.plot(fig, config=config, filename=graph_path, auto_open=False)
     display(HTML('The graph for {} is too large. You can view it <a href="{}" target="_blank">here</a>.'
                  .format(title, graph_path)))
 
